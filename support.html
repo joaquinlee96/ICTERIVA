@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte — ICTERIVA</title>
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --card: #0d1b2d;
+      --border: #1d3550;
+      --text: #f4f7fb;
+      --secondary: #a9b7c8;
+      --cyan: #35d7ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                   "Helvetica Neue", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 50% 0%, #102b46 0%, var(--bg) 45%, #03070d 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(850px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    header {
+      margin-bottom: 35px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 52px);
+      margin: 0 0 10px;
+      letter-spacing: -1px;
+    }
+
+    .subtitle {
+      color: var(--secondary);
+      font-size: 18px;
+    }
+
+    .card {
+      background: rgba(13, 27, 45, 0.88);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 0;
+    }
+
+    p, li {
+      color: var(--secondary);
+    }
+
+    a {
+      color: var(--cyan);
+    }
+
+    .email {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: #102238;
+      border: 1px solid #1f3b56;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      color: #718197;
+      font-size: 13px;
+      padding-top: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <a class="back" href="index.html">← Volver a ICTERIVA</a>
+
+    <header>
+      <h1>Soporte</h1>
+      <div class="subtitle">
+        Ayuda y contacto para ICTERIVA
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>¿Necesitas ayuda?</h2>
+
+      <p>
+        Si tienes alguna duda sobre el funcionamiento de ICTERIVA, encuentras
+        un problema técnico o deseas reportar un comportamiento inesperado de
+        la aplicación, puedes contactarnos por correo electrónico.
+      </p>
+
+      <a class="email" href="mailto:joaquinlee96@gmail.com">
+        ✉️ joaquinlee96@gmail.com
+      </a>
+    </section>
+
+    <section class="card">
+      <h2>Al reportar un problema</h2>
+
+      <p>
+        Para poder ayudarte de manera más rápida, puedes incluir:
+      </p>
+
+      <ul>
+        <li>Modelo de iPhone y versión de iOS.</li>
+        <li>Versión de ICTERIVA.</li>
+        <li>Descripción breve del problema.</li>
+        <li>Pasos necesarios para reproducirlo.</li>
+        <li>Capturas de pantalla, si son útiles.</li>
+      </ul>
+
+      <p>
+        Por privacidad, evita enviar por correo nombres, CURP, números de
+        expediente, domicilios u otros datos identificables de pacientes.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Información clínica</h2>
+
+      <p>
+        ICTERIVA es una herramienta de apoyo educativo y a la decisión clínica.
+        Sus resultados no sustituyen la valoración clínica del recién nacido,
+        la interpretación de estudios de laboratorio ni los protocolos
+        institucionales vigentes.
+      </p>
+    </section>
+
+    <footer>
+      ICTERIVA · © 2026 Joaquin Lee
+    </footer>
+
+  </main>
+
+</body>
+</html>
