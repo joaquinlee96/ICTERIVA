@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICTERIVA — Bilirrubina neonatal</title>
+
+  <style>
+    :root {
+      --bg: #07111f;
+      --card: #0d1b2d;
+      --card-border: #1d3550;
+      --text: #f4f7fb;
+      --secondary: #a9b7c8;
+      --cyan: #35d7ff;
+      --cyan-dark: #0ea5e9;
+      --amber: #f5b942;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Display",
+        "SF Pro Text",
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+      background:
+        radial-gradient(circle at 50% 0%, #102b46 0%, var(--bg) 45%, #03070d 100%);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 90px 20px 55px;
+    }
+
+    .logo {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 24px;
+      border-radius: 22px;
+      background: linear-gradient(145deg, #102a43, #050b13);
+      border: 1px solid #24445f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow:
+        0 0 35px rgba(53, 215, 255, 0.16),
+        inset 0 0 20px rgba(53, 215, 255, 0.05);
+    }
+
+    .logo span {
+      color: var(--cyan);
+      font-size: 34px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 68px);
+      letter-spacing: -2px;
+      line-height: 1;
+    }
+
+    .subtitle {
+      margin: 18px auto 0;
+      color: var(--secondary);
+      font-size: 20px;
+      max-width: 600px;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      color: var(--cyan);
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .card {
+      background: rgba(13, 27, 45, 0.82);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 30px;
+      margin: 20px 0;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    p {
+      color: var(--secondary);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 25px;
+    }
+
+    .link {
+      display: block;
+      padding: 18px;
+      border-radius: 16px;
+      text-decoration: none;
+      color: var(--text);
+      background: #102238;
+      border: 1px solid #1f3b56;
+      transition: 0.2s ease;
+    }
+
+    .link:hover {
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+
+    .link strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .link small {
+      color: var(--secondary);
+    }
+
+    .clinical {
+      border-left: 3px solid var(--amber);
+    }
+
+    footer {
+      text-align: center;
+      padding: 45px 20px 60px;
+      color: #718197;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding-top: 65px;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <span>✦</span>
+    </div>
+
+    <h1>ICTERIVA</h1>
+
+    <div class="subtitle">
+      Bilirrubina neonatal
+    </div>
+
+    <div class="tagline">
+      Herramienta de apoyo clínico y educativo
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <h2>Interpretación de bilirrubina neonatal</h2>
+
+      <p>
+        ICTERIVA es una herramienta de apoyo clínico y educativo diseñada
+        para facilitar la interpretación de la bilirrubina neonatal mediante
+        nomogramas y algoritmos clínicos incorporados en la aplicación.
+      </p>
+
+      <p>
+        Incluye algoritmos basados en AAP 2022 y en la GPC IMSS-262-19,
+        además de la evaluación de riesgo de Bhutani.
+      </p>
+    </section>
+
+    <section class="card clinical">
+      <h2>Información clínica</h2>
+
+      <p>
+        Los resultados proporcionados por ICTERIVA no sustituyen la valoración
+        clínica del recién nacido, la interpretación de los estudios de
+        laboratorio ni los protocolos institucionales vigentes.
+      </p>
+
+      <p>
+        Antes de tomar cualquier decisión clínica, el usuario debe corroborar
+        el resultado con los datos originales del paciente, los estudios
+        correspondientes y la guía o protocolo institucional aplicable.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Información y soporte</h2>
+
+      <div class="links">
+
+        <a class="link" href="privacy.html">
+          <strong>🔒 Política de privacidad</strong>
+          <small>
+            Información sobre el tratamiento y almacenamiento de datos.
+          </small>
+        </a>
+
+        <a class="link" href="support.html">
+          <strong>✉️ Soporte</strong>
+          <small>
+            Contacto y asistencia para ICTERIVA.
+          </small>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>ICTERIVA · © 2026 Joaquin Lee</div>
+    <div style="margin-top: 8px;">
+      <a href="privacy.html">Privacidad</a>
+      &nbsp;·&nbsp;
+      <a href="support.html">Soporte</a>
+    </div>
+  </footer>
+
+</body>
+</html>
